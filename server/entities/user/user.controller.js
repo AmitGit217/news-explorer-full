@@ -15,9 +15,9 @@ import NotFound from '../../helpers/errors/NotFound.js';
 /**  POST /signup
  *
  * @param {Object} req { name: string, email: string, password: string }
- * @param {Object} res Promise
+ * @param {Promise} res Depended.
  * @param {String} next throw error for a specific scenario.
- * @returns {Object} { name: string, email: string }
+ * @returns {Object} { name: string, email: string, _id: ObjectId }
  */
 
 const signup = (req, res, next) => {
@@ -41,6 +41,13 @@ const signup = (req, res, next) => {
   });
 };
 
+/**
+ * POST /signin
+ * @param {Object} req { email: string, password: string }
+ * @param {Promise} res Depended.
+ * @param {String} next Throw error for a specific scenario.
+ * @returns {Object} { token: string ,name: string, email: string, password: string, _id: ObjectId }
+ */
 const signin = (req, res, next) => {
   const { email, password } = req.body;
   User.findUserByCredentials(email, password)
@@ -60,6 +67,13 @@ const signin = (req, res, next) => {
     .catch(next);
 };
 
+/**
+ * GET /users/me
+ * @param {String} req JWT token in authorization headers.
+ * @param {Promise} res Depended.
+ * @param {String} next Throw error for a specific scenario.
+ * @returns {Object} { name: string, email: string, password: string, id: ObjectId }
+ */
 const currentUser = (req, res, next) => {
   const { id } = req.user;
   User.findById(id)
