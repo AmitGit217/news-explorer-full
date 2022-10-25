@@ -1,0 +1,20 @@
+{
+  "extends": ["airbnb-base", "prettier", "eslint:recommended"],
+
+  "rules": {
+    "no-underscore-dangle": [
+      "error",
+      { "allow": ["_id", "_doc", "__dirname"] }
+    ],
+    "implicit-arrow-linebreak": "off",
+    "no-useless-escape": "off",
+    "no-unused-vars": "off",
+    "eqeqeq": "off",
+    "import/extensions": [0],
+    "no-undef": "off",
+    "consistent-return": "off"
+  },
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  }
+}
