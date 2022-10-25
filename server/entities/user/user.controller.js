@@ -46,7 +46,7 @@ const signup = (req, res, next) => {
  * @param {Object} req { email: string, password: string }
  * @param {Promise} res Depended.
  * @param {String} next Throw error for a specific scenario.
- * @returns {Object} { token: string ,name: string, email: string, password: string, _id: ObjectId }
+ * @returns {Object} { token: string ,name: string, email: string, password: string, id: ObjectId }
  */
 const signin = (req, res, next) => {
   const { email, password } = req.body;
