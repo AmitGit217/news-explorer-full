@@ -1,0 +1,22 @@
+{
+  "name": "news-explorer-full",
+  "version": "1.0.0",
+  "description": "Full stack web service of a news explorer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmitGit217/news-explorer-full.git"
+  },
+  "author": "Amit Bar-Gil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmitGit217/news-explorer-full/issues"
+  },
+  "homepage": "https://github.com/AmitGit217/news-explorer-full#readme",
+  "devDependencies": {
+    "jsdoc": "^3.6.11"
+  }
+}
