@@ -54,15 +54,15 @@
 
 **Store and hooks by entities**
 
-    The api for the clinet actions and the app state is the hooks that has been developed using
+    The api for the client actions and the app state is the hooks that has been developed using
     Context API. The hook will get an "injection" of the api service for example:
 
     const useCardsFromNewsApi = () => {
-        const [cards, setcards] = useState(false)
+        const [cards, setCards] = useState(false)
         const getCards = async () => {
             try {
                 const res = await newsApiService.getCards()
-                setcards(res.data)
+                setCards(res.data)
                 return res
             }catch(err){
                 console.log(err)
@@ -85,4 +85,4 @@
 -   Test-Driven-Development.
 -   Semantic HTML and BEM methodology.
 -   Responsive user interface.
--   Global state managment using Context API.
+-   Global state management using Context API.
