@@ -1,0 +1,36 @@
+.preloader {
+    padding: 5% 104px;
+    background: #f5f6f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+.preloader__animation {
+    display: block;
+    width: 74px;
+    height: 74px;
+    border: 2px solid rgb(107, 107, 107);
+    border-bottom-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    animation: spin 0.75s infinite linear;
+}
+.preloader__text {
+    all: unset;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #b6bcbf;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}

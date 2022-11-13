@@ -1,0 +1,89 @@
+.popup-nav {
+    position: absolute;
+    background: #0000005e;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: 0.2s;
+}
+.popup-nav_show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup-nav__title {
+    all: unset;
+    background: url(../../images/NewsExplorer.svg);
+    height: 24px;
+    width: 117px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.popup-nav__top {
+    height: 56px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-bottom: 1px solid #c4c4c4a6;
+}
+
+.popup-nav__container {
+    background: #1a1b22;
+}
+
+.popup-nav__bottom {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 16px 24px 16px;
+    gap: 22px;
+}
+
+.popup-nav__links {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.popup-nav__link {
+    all: unset;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.popup-nav__signin {
+    all: unset;
+    align-self: center;
+    cursor: pointer;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+    height: 56px;
+    width: 288px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.popup-nav__exit {
+    all: unset;
+    cursor: pointer;
+    background: url(../../images/close.svg);
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    transition: 0.2s;
+    background-size: cover;
+    right: 16px;
+}

@@ -1,0 +1,111 @@
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 0 0 0;
+    gap: 88px;
+}
+
+.search-form__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.search-form__title {
+    all: unset;
+    max-width: 608px;
+    font-family: "Roboto Slab", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    color: #ffffff;
+}
+.search-form__subtitle {
+    all: unset;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.search-form__search {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    position: relative;
+    width: 608px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-form__search-text {
+    border: unset;
+    outline: none;
+    flex-grow: 1;
+    border-radius: 100px;
+    padding: unset;
+    text-indent: 24px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.search-form__search-button {
+    cursor: pointer;
+    position: absolute;
+    width: 168px;
+    height: 64px;
+    background: #2f71e5;
+    box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+    border: unset;
+    border-radius: 100px;
+    right: -2px;
+    padding: unset;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.1s;
+}
+
+.search-form__search-button:hover {
+    background: #347eff;
+}
+.search-form__search-button:active {
+    background: #2a65cc;
+}
+
+@media screen and (max-width: 720px) {
+    .search-form {
+        gap: 122px;
+        padding: 30px 16px;
+        margin: 0;
+    }
+    .search-form__text {
+        gap: 16px;
+    }
+    .search-form__title {
+        font-size: 36px;
+    }
+    .search-form__subtitle {
+        font-size: 18px;
+    }
+    .search-form__search {
+        flex-direction: column;
+        width: 288px;
+        height: unset;
+        align-items: center;
+        gap: 16px;
+    }
+    .search-form__search-text {
+        width: 100%;
+        height: 56px;
+    }
+    .search-form__search-button {
+        position: static;
+        width: 100%;
+        height: 56px;
+    }
+}

@@ -1,0 +1,108 @@
+.news-list {
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    padding: 5% 104px;
+    background: #f5f6f7;
+    align-items: center;
+    position: relative;
+}
+.news-list__title {
+    font-family: "Roboto Slab", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    margin: 0 0 64px 0;
+    align-self: flex-start;
+}
+
+.news-list__articles {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+    gap: 16px;
+    justify-content: center;
+    list-style: none;
+}
+
+.news-list__show-more {
+    all: unset;
+    cursor: pointer;
+    height: 64px;
+    width: 288px;
+    border-radius: 80px;
+    background: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #1a1b22;
+    margin-top: 64px;
+    align-self: center;
+    transition: 0.1s;
+}
+
+.news-list__show-more:hover {
+    background: #e8e8e8;
+}
+
+.news-list__not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 104px;
+    background: #f5f6f7;
+}
+.news-list__not-found-image {
+    margin: 0;
+    background: url(../../images/not-found.svg);
+    height: 74px;
+    width: 74px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.news-list__not-found-title {
+    all: unset;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    margin: 30px 0 16px 0;
+}
+.news-list__not-found-text {
+    all: unset;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #b6bcbf;
+}
+
+@media screen and (max-width: 1400px) {
+    .news-list__articles {
+        padding: 0;
+    }
+    .news-list {
+        padding: 24px 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .news-list__articles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .news-list {
+        padding: 24px 16px;
+    }
+    .news-list__title {
+        font-size: 30px;
+        margin: 16px 0 58px 0;
+    }
+}

@@ -1,0 +1,174 @@
+.popup {
+    position: fixed;
+    background: #0000005e;
+    z-index: 1;
+    height: 100%;
+    max-width: 1440px;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    transition: 0.2s;
+    justify-content: center;
+    align-items: center;
+}
+/**? Remember to change the popup display !!!  */
+.popup_show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup__container {
+    z-index: 2;
+    background: #ffffff;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    width: 430px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    position: relative;
+    padding: 34px 36px 28px 36px;
+}
+
+.popup__title {
+    all: unset;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.popup__exit {
+    all: unset;
+    cursor: pointer;
+    background: url(../../images/close.svg);
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: -40px;
+    top: -40px;
+    transition: 0.2s;
+}
+
+.popup__exit:hover {
+    opacity: 0.8;
+}
+
+.popup__form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.popup__form-labels {
+    margin-top: 22px;
+    margin-bottom: 39px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.popup__form-label {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    color: #2f71e5;
+    row-gap: 9px;
+}
+
+.popup__form-input {
+    all: unset;
+    cursor: pointer;
+    border-bottom: 1px solid #00000023;
+    padding: 1%;
+    color: #000000;
+}
+.popup__form-input:focus {
+    border-bottom: 1px solid #000000;
+}
+
+.popup__form-submit {
+    all: unset;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 16px;
+    height: 64px;
+    width: 360px;
+    border-radius: 100px;
+    background: #2f71e5;
+    box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+    text-align: center;
+    color: #ffffff;
+    transition: 0.2s;
+}
+
+.popup__form-submit:hover {
+    background: #347eff;
+}
+.popup__form-submit:active {
+    background: #2a65cc;
+}
+.popup__form-submit_disabled,
+.popup__form-submit_disabled:hover,
+.popup__form-submit_disabled:active {
+    background: #e6e8eb;
+}
+
+.popup__form-nav {
+    align-self: center;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.popup__form-nav_action {
+    cursor: pointer;
+    color: #2f71e5;
+}
+
+.popup__form-input_type_error {
+    all: unset;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    position: absolute;
+    bottom: -20px;
+    color: #ff0000;
+}
+.popup__form-submit_type_error {
+    all: unset;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #ff0000;
+}
+
+@media screen and (max-width: 768px) {
+    .popup__container {
+        max-width: 420px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .popup__container {
+        max-width: 320px;
+        padding: 16px;
+    }
+    .popup__form-submit {
+        height: 64px;
+        width: 288px;
+    }
+    .popup__exit {
+        top: -40px;
+        right: 0;
+        height: 24px;
+        width: 24px;
+        background-size: cover;
+    }
+}
