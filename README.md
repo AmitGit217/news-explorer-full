@@ -2,7 +2,7 @@
 
 **Full stack web service for exploring news articles and saving them.**
 
-**[Live app](https://news-explorer-frontend-dqeunyzpf-amitgit217.vercel.app/)**
+**[Live app](https://news-explorer-frontend-irwgztfro-amitgit217.vercel.app/)**
 
 ## Back-End
 
